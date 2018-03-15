@@ -13,6 +13,7 @@ All the calibration images (chess board images) are loaded using glob.glob. Each
 2. Pipeline
 
 a) The image is distortion-corrected.
+
 b) Binary image is created.
 
 I use only colour thresholds as they provide enough information to identify the lines. First, I limit the area to the area in front of the vehicle using the region_of_interest function. Subsequently, I use colour thresholds using the color_th function. RGB and HLS colour spaces were used. Red and green enabled to identify bright yellow lines and white lines, whereas hue and lightness were used to identify darker yellow parts.
