@@ -18,7 +18,7 @@ b) Binary image is created.
 
 I use only colour thresholds as they provide enough information to identify the lines. First, I limit the area to the area in front of the vehicle using the region_of_interest function. Subsequently, I use colour thresholds using the color_th function. RGB and HLS colour spaces were used. Red and green enabled to identify bright yellow lines and white lines, whereas hue and lightness were used to identify darker yellow parts.
 
-c) Perspective Transoform is applied
+c) Perspective Transform is applied
 
 I identify the source points and destination points.  Subsequently, the warped image is acquired using the cv2.getPerspectiveTranform and cv2.warpPerspective functions. 
 
